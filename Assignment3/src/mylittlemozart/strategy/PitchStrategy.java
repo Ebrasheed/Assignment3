@@ -1,5 +1,7 @@
 package mylittlemozart.strategy;
 
-public class PitchStrategy {
+import mylittlemozart.MidiEventData;
 
+public interface PitchStrategy {
+    MidiEventData applyPitch(MidiEventData original);
 }
